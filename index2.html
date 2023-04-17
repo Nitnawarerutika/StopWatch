@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- title -->
+    <title>Stopwatch</title>
+
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#a7aad2" />
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style2.css" />
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+
+  <body style="margin: 0px;">
+   
+    <header >
+      <div style="margin-left: 30px;margin-top: 6px;">
+    <span  style="color: #9e9e9e"> STOP</span>
+    <span style="color: #37417a">WATCH</span>
+    </header>
+  </div>
+
+
+  <!-- <div id="bg">
+    <div id="cover">
+      <div id="circle"></div>
+      <div id="circle2"></div>
+      <div id="box1">
+        <div id="circle-timer"></div>
+      </div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+      <div id="box4"></div>
+    </div>
+  </div> -->
+  
+    <div class="time">
+       <span id="hr">00</span>
+      <span class="dots">:</span>
+       <span id="min">00</span>
+      <span class="dots">:</span>
+      <span id="seconds">00</span>
+      <!-- <span class="dots">:</span> -->
+      <!-- <span id="tens">00</span> -->
+    </div>
+    <div class="btns">
+      <button type="button" class="btn btn-start" id="start">Start</button>
+      <button type="button" class="btn btn-stop" id="stop">Stop</button>
+      <button type="button" class="btn btn-reset" id="reset">Reset</button>
+    </div>
+
+    <audio loop preload="auto" id="sound">
+      <source src="audio/sound.mp3" />
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- script js -->
+    <script src="script2.js"></script>
+  </body>
+</html>
